@@ -1,0 +1,804 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri May 31 10:18:35 2019
+# Process ID: 21292
+# Current directory: C:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1
+# Command line: vivado.exe -log bd_0_hls_inst_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+# Log file: C:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.vds
+# Journal file: C:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source bd_0_hls_inst_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.cache/ip 
+Command: synth_design -top bd_0_hls_inst_0 -part xc7z020clg484-1 -directive sdx_optimization_effort_high -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17100 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 476.191 ; gain = 97.289
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'bd_0_hls_inst_0' [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.vhd:93]
+	Parameter C_S_AXI_AXILITES_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_AXILITES_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'sobel' declared at 'c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel.vhd:12' bound to instance 'U0' of component 'sobel' [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.vhd:190]
+INFO: [Synth 8-638] synthesizing module 'sobel' [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel.vhd:52]
+	Parameter C_S_AXI_AXILITES_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_AXILITES_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel.vhd:109]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel.vhd:112]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel.vhd:179]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel.vhd:185]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel.vhd:191]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel.vhd:224]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel.vhd:251]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel.vhd:282]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel.vhd:397]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_AXILiteS_s_axi' declared at 'c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel_AXILiteS_s_axi.vhd:12' bound to instance 'sobel_AXILiteS_s_axi_U' of component 'sobel_AXILiteS_s_axi' [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel.vhd:525]
+INFO: [Synth 8-638] synthesizing module 'sobel_AXILiteS_s_axi' [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel_AXILiteS_s_axi.vhd:68]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sobel_AXILiteS_s_axi' (1#1) [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel_AXILiteS_s_axi.vhd:68]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 675 - type: integer 
+	Parameter AddressWidth bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_line_buffer' declared at 'c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel_line_buffer.vhd:105' bound to instance 'line_buffer_U' of component 'sobel_line_buffer' [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel.vhd:556]
+INFO: [Synth 8-638] synthesizing module 'sobel_line_buffer' [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel_line_buffer.vhd:125]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 675 - type: integer 
+	Parameter AddressWidth bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_line_buffer_ram' declared at 'c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel_line_buffer.vhd:13' bound to instance 'sobel_line_buffer_ram_U' of component 'sobel_line_buffer_ram' [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel_line_buffer.vhd:144]
+INFO: [Synth 8-638] synthesizing module 'sobel_line_buffer_ram' [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel_line_buffer.vhd:36]
+	Parameter MEM_TYPE bound to: block - type: string 
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 10 - type: integer 
+	Parameter MEM_SIZE bound to: 675 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sobel_line_buffer_ram' (2#1) [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel_line_buffer.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'sobel_line_buffer' (3#1) [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel_line_buffer.vhd:125]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 6 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_sitofp_32s_bkb' declared at 'c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel_sitofp_32s_bkb.vhd:11' bound to instance 'sobel_sitofp_32s_bkb_U1' of component 'sobel_sitofp_32s_bkb' [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel.vhd:575]
+INFO: [Synth 8-638] synthesizing module 'sobel_sitofp_32s_bkb' [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel_sitofp_32s_bkb.vhd:27]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 6 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_ap_sitofp_4_no_dsp_32' declared at 'c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/ip/sobel_ap_sitofp_4_no_dsp_32.vhd:59' bound to instance 'sobel_ap_sitofp_4_no_dsp_32_u' of component 'sobel_ap_sitofp_4_no_dsp_32' [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel_sitofp_32s_bkb.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'sobel_ap_sitofp_4_no_dsp_32' [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/ip/sobel_ap_sitofp_4_no_dsp_32.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 1 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 4 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_7' declared at 'c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/c63e/hdl/floating_point_v7_1_vh_rfs.vhd:91615' bound to instance 'U0' of component 'floating_point_v7_1_7' [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/ip/sobel_ap_sitofp_4_no_dsp_32.vhd:198]
+INFO: [Synth 8-256] done synthesizing module 'sobel_ap_sitofp_4_no_dsp_32' (18#1) [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/ip/sobel_ap_sitofp_4_no_dsp_32.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'sobel_sitofp_32s_bkb' (19#1) [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel_sitofp_32s_bkb.vhd:27]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 12 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_fsqrt_32ns_cud' declared at 'c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel_fsqrt_32ns_cud.vhd:11' bound to instance 'sobel_fsqrt_32ns_cud_U2' of component 'sobel_fsqrt_32ns_cud' [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel.vhd:588]
+INFO: [Synth 8-638] synthesizing module 'sobel_fsqrt_32ns_cud' [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel_fsqrt_32ns_cud.vhd:29]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 12 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_ap_fsqrt_10_no_dsp_32' declared at 'c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/ip/sobel_ap_fsqrt_10_no_dsp_32.vhd:59' bound to instance 'sobel_ap_fsqrt_10_no_dsp_32_u' of component 'sobel_ap_fsqrt_10_no_dsp_32' [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel_fsqrt_32ns_cud.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'sobel_ap_fsqrt_10_no_dsp_32' [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/ip/sobel_ap_fsqrt_10_no_dsp_32.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 1 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 10 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_7' declared at 'c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/c63e/hdl/floating_point_v7_1_vh_rfs.vhd:91615' bound to instance 'U0' of component 'floating_point_v7_1_7' [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/ip/sobel_ap_fsqrt_10_no_dsp_32.vhd:198]
+INFO: [Synth 8-256] done synthesizing module 'sobel_ap_fsqrt_10_no_dsp_32' (25#1) [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/ip/sobel_ap_fsqrt_10_no_dsp_32.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'sobel_fsqrt_32ns_cud' (26#1) [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel_fsqrt_32ns_cud.vhd:29]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter dout_WIDTH bound to: 22 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_mul_mul_11sdEe' declared at 'c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel_mul_mul_11sdEe.vhd:31' bound to instance 'sobel_mul_mul_11sdEe_U3' of component 'sobel_mul_mul_11sdEe' [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel.vhd:603]
+INFO: [Synth 8-638] synthesizing module 'sobel_mul_mul_11sdEe' [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel_mul_mul_11sdEe.vhd:44]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter dout_WIDTH bound to: 22 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_mul_mul_11sdEe_DSP48_0' declared at 'c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel_mul_mul_11sdEe.vhd:6' bound to instance 'sobel_mul_mul_11sdEe_DSP48_0_U' of component 'sobel_mul_mul_11sdEe_DSP48_0' [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel_mul_mul_11sdEe.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'sobel_mul_mul_11sdEe_DSP48_0' [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel_mul_mul_11sdEe.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'sobel_mul_mul_11sdEe_DSP48_0' (27#1) [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel_mul_mul_11sdEe.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'sobel_mul_mul_11sdEe' (28#1) [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel_mul_mul_11sdEe.vhd:44]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter din2_WIDTH bound to: 22 - type: integer 
+	Parameter dout_WIDTH bound to: 22 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_mac_muladd_eOg' declared at 'c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel_mac_muladd_eOg.vhd:41' bound to instance 'sobel_mac_muladd_eOg_U4' of component 'sobel_mac_muladd_eOg' [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel.vhd:615]
+INFO: [Synth 8-638] synthesizing module 'sobel_mac_muladd_eOg' [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel_mac_muladd_eOg.vhd:56]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 11 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter din2_WIDTH bound to: 22 - type: integer 
+	Parameter dout_WIDTH bound to: 22 - type: integer 
+INFO: [Synth 8-3491] module 'sobel_mac_muladd_eOg_DSP48_1' declared at 'c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel_mac_muladd_eOg.vhd:12' bound to instance 'sobel_mac_muladd_eOg_DSP48_1_U' of component 'sobel_mac_muladd_eOg_DSP48_1' [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel_mac_muladd_eOg.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'sobel_mac_muladd_eOg_DSP48_1' [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel_mac_muladd_eOg.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'sobel_mac_muladd_eOg_DSP48_1' (29#1) [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel_mac_muladd_eOg.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'sobel_mac_muladd_eOg' (30#1) [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel_mac_muladd_eOg.vhd:56]
+WARNING: [Synth 8-6014] Unused sequential element output_V_keep_V_1_sel_rd_reg was removed.  [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel.vhd:839]
+WARNING: [Synth 8-6014] Unused sequential element output_V_strb_V_1_sel_rd_reg was removed.  [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel.vhd:921]
+INFO: [Synth 8-256] done synthesizing module 'sobel' (31#1) [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'bd_0_hls_inst_0' (32#1) [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.vhd:93]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized17 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized17 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized17 has unconnected port SINIT
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[11]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[10]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[9]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[8]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DIVIDE_BY_ZERO_IN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized70 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized70 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized70 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized70 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized70 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain__parameterized31 has unconnected port B[11]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized29 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized29 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized29 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized29 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized29 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized27 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized27 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized27 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized27 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized27 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port SINIT
+WARNING: [Synth 8-3331] design flt_round_bit__parameterized0 has unconnected port NORMALIZE[1]
+WARNING: [Synth 8-3331] design flt_round_bit__parameterized0 has unconnected port FIXED_POINT
+WARNING: [Synth 8-3331] design flt_round_bit__parameterized0 has unconnected port FIX_MANT_SIGN
+WARNING: [Synth 8-3331] design flt_round_bit__parameterized0 has unconnected port SIGN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized31 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized31 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized31 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized31 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized31 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized25 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized25 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized25 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized25 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized25 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized136 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized136 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized136 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized136 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized136 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized21 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized21 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized21 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized21 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized21 has unconnected port SINIT
+WARNING: [Synth 8-3331] design renorm_and_round_logic__parameterized0 has unconnected port EXP_OUT[7]
+WARNING: [Synth 8-3331] design renorm_and_round_logic__parameterized0 has unconnected port EXP_OUT[6]
+WARNING: [Synth 8-3331] design renorm_and_round_logic__parameterized0 has unconnected port EXP_OUT[5]
+WARNING: [Synth 8-3331] design renorm_and_round_logic__parameterized0 has unconnected port EXP_OUT[4]
+WARNING: [Synth 8-3331] design renorm_and_round_logic__parameterized0 has unconnected port EXP_OUT[3]
+WARNING: [Synth 8-3331] design renorm_and_round_logic__parameterized0 has unconnected port EXP_OUT[2]
+WARNING: [Synth 8-3331] design renorm_and_round_logic__parameterized0 has unconnected port EXP_OUT[1]
+WARNING: [Synth 8-3331] design renorm_and_round_logic__parameterized0 has unconnected port EXP_OUT[0]
+WARNING: [Synth 8-3331] design renorm_and_round_logic__parameterized0 has unconnected port EXP_INC_IN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized33 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized33 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized33 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized33 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized33 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized134 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized134 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized134 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized132 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized132 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized132 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized130 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized130 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized130 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized130 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized130 has unconnected port SINIT
+WARNING: [Synth 8-3331] design special_detect has unconnected port A[31]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized128 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized128 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized128 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized15 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized15 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized15 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized48 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized48 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized48 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized48 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized48 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized72 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized72 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized72 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized60 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized60 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized60 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized56 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized56 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized56 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized56 has unconnected port SSET
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 613.195 ; gain = 234.293
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 613.195 ; gain = 234.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 613.195 ; gain = 234.293
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1022 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/sobel_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/sobel_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 930.258 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  FDE => FDRE: 16 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 930.555 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.091 . Memory (MB): peak = 932.121 ; gain = 1.863
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 932.121 ; gain = 553.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 932.121 ; gain = 553.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 932.121 ; gain = 553.219
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'sobel_AXILiteS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'sobel_AXILiteS_s_axi'
+INFO: [Synth 8-5544] ROM "BVALID" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "WREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "AWREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RVALID_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ARREADY_t" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "chunk_is_zero_ip" won't be mapped to RAM because address size (36) is larger than maximum supported(25)
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_31_0_1_reg_854_reg' and it is trimmed from '32' to '10' bits. [c:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/48df/hdl/vhdl/sobel.vhd:1161]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond1_fu_287_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "input_V_data_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "output_V_data_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "output_V_last_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "grp_fu_276_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond1_fu_287_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "input_V_data_V_0_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "output_V_data_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "output_V_last_V_1_state_cmp_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "grp_fu_276_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_V_data_V_0_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_V_data_V_0_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_V_last_V_0_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "input_V_last_V_0_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "output_V_data_V_1_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "output_V_data_V_1_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "output_V_keep_V_1_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "output_V_keep_V_1_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "output_V_last_V_1_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "output_V_last_V_1_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "output_V_strb_V_1_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "output_V_strb_V_1_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "p_Val2_5_fu_743_p3" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                              011
+*
+                  wridle |                             0010 |                              000
+                  wrdata |                             0100 |                              001
+                  wrresp |                             1000 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'sobel_AXILiteS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                              110
+*
+                  rdidle |                              010 |                              100
+                  rddata |                              100 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'sobel_AXILiteS_s_axi'
+INFO: [Synth 8-3971] The signal ram_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 932.121 ; gain = 553.219
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'U0/sobel_sitofp_32s_bkb_U1/sobel_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized4) to 'U0/sobel_sitofp_32s_bkb_U1/sobel_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'U0/sobel_sitofp_32s_bkb_U1/sobel_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized4) to 'U0/sobel_sitofp_32s_bkb_U1/sobel_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/sobel_sitofp_32s_bkb_U1/sobel_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized4) to 'U0/sobel_sitofp_32s_bkb_U1/sobel_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/sobel_sitofp_32s_bkb_U1/sobel_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized4) to 'U0/sobel_sitofp_32s_bkb_U1/sobel_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/sobel_sitofp_32s_bkb_U1/sobel_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized4) to 'U0/sobel_sitofp_32s_bkb_U1/sobel_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/sobel_sitofp_32s_bkb_U1/sobel_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized4) to 'U0/sobel_sitofp_32s_bkb_U1/sobel_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/sobel_sitofp_32s_bkb_U1/sobel_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized4) to 'U0/sobel_sitofp_32s_bkb_U1/sobel_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'U0/sobel_sitofp_32s_bkb_U1/sobel_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized15) to 'U0/sobel_sitofp_32s_bkb_U1/sobel_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/sobel_sitofp_32s_bkb_U1/sobel_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized15) to 'U0/sobel_sitofp_32s_bkb_U1/sobel_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized4) to 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized4) to 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized4) to 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized4) to 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized4) to 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_INC_DELAY' (delay__parameterized4) to 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized15) to 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized15) to 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "SQRT_OP.SPD.OP/i_mant_calc.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SQRT_OP.SPD.OP/i_mant_calc.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "data11" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exitcond1_fu_287_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grp_fu_276_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3971] The signal line_buffer_U/sobel_line_buffer_ram_U/ram_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3886] merging instance 'U0/tmp_27_reg_859_reg[0]' (FDE) to 'U0/tmp_31_0_1_reg_854_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_27_reg_859_reg[5]' (FDE) to 'U0/tmp_31_0_1_reg_854_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_27_reg_859_reg[4]' (FDE) to 'U0/tmp_31_0_1_reg_854_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_27_reg_859_reg[3]' (FDE) to 'U0/tmp_31_0_1_reg_854_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_27_reg_859_reg[2]' (FDE) to 'U0/tmp_31_0_1_reg_854_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_27_reg_859_reg[1]' (FDE) to 'U0/tmp_31_0_1_reg_854_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_27_reg_859_reg[6]' (FDE) to 'U0/tmp_31_0_1_reg_854_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_27_reg_859_reg[7]' (FDE) to 'U0/tmp_31_0_1_reg_854_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_27_reg_859_reg[8]' (FDE) to 'U0/tmp_31_0_1_reg_854_reg[8]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_27_reg_859_reg[9]' (FDE) to 'U0/tmp_31_0_1_reg_854_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_sitofp_32s_bkb_U1/din0_buf1_reg[30]' (FDE) to 'U0/sobel_sitofp_32s_bkb_U1/din0_buf1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_sitofp_32s_bkb_U1/din0_buf1_reg[29]' (FDE) to 'U0/sobel_sitofp_32s_bkb_U1/din0_buf1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_sitofp_32s_bkb_U1/din0_buf1_reg[28]' (FDE) to 'U0/sobel_sitofp_32s_bkb_U1/din0_buf1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_sitofp_32s_bkb_U1/din0_buf1_reg[27]' (FDE) to 'U0/sobel_sitofp_32s_bkb_U1/din0_buf1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_sitofp_32s_bkb_U1/din0_buf1_reg[26]' (FDE) to 'U0/sobel_sitofp_32s_bkb_U1/din0_buf1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_sitofp_32s_bkb_U1/din0_buf1_reg[25]' (FDE) to 'U0/sobel_sitofp_32s_bkb_U1/din0_buf1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_sitofp_32s_bkb_U1/din0_buf1_reg[24]' (FDE) to 'U0/sobel_sitofp_32s_bkb_U1/din0_buf1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_sitofp_32s_bkb_U1/din0_buf1_reg[23]' (FDE) to 'U0/sobel_sitofp_32s_bkb_U1/din0_buf1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_sitofp_32s_bkb_U1/din0_buf1_reg[22]' (FDE) to 'U0/sobel_sitofp_32s_bkb_U1/din0_buf1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_sitofp_32s_bkb_U1/din0_buf1_reg[21]' (FDE) to 'U0/sobel_sitofp_32s_bkb_U1/din0_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_sitofp_32s_bkb_U1/ce_r_reg' (FD) to 'U0/sobel_fsqrt_32ns_cud_U2/ce_r_reg'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[2].MA_DEL.MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[5].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[2].MA_DEL.MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[1]' (FDE) to 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[5].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[5].MA_DEL.MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[5].MA_DEL.MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[5].MA_DEL.MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[1]' (FDE) to 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[8].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[5].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[5]' (FDE) to 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[5].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0 /i_synth/\SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[5].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[6] )
+INFO: [Synth 8-3886] merging instance 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[8].MA_DEL.MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[11].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[8].MA_DEL.MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[1]' (FDE) to 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[11].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[8].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[8].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[8].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[9]' (FDE) to 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[5].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[11].MA_DEL.MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[11].MA_DEL.MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[11].MA_DEL.MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[1]' (FDE) to 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[14].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[11].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[11]' (FDE) to 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[11].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[14].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[14]' (FDE) to 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[14].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[17].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[17]' (FDE) to 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[17].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[18]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[20].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[20]' (FDE) to 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[20].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[23].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[23]' (FDE) to 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[23].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[24]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[4]' (FDE) to 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[5]' (FDE) to 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[6]' (FDE) to 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[8]' (FDE) to 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[9]' (FDE) to 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[10]' (FDE) to 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[11]' (FDE) to 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[12]' (FDE) to 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[13]' (FDE) to 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[14]' (FDE) to 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[15]' (FDE) to 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[16]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[16]' (FDE) to 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[17]' (FDE) to 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[18]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[18]' (FDE) to 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[19]' (FDE) to 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[20]' (FDE) to 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[21]' (FDE) to 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[22]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[22]' (FDE) to 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[23]' (FDE) to 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[24]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[24]' (FDE) to 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[25]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[25]' (FDE) to 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[26]' (FDE) to 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[27]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[27]' (FDE) to 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[28]' (FDE) to 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[29]' (FDE) to 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[30]' (FDE) to 'U0/sobel_AXILiteS_s_axi_U/rdata_data_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\sobel_AXILiteS_s_axi_U/rdata_data_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0 /i_synth/\SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[5].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[6] )
+INFO: [Synth 8-3886] merging instance 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[11].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[12]' (FDE) to 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[5].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0 /i_synth/\SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[5].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[6] )
+INFO: [Synth 8-3886] merging instance 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[14].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[15]' (FDE) to 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[5].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0 /i_synth/\SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[5].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[6] )
+INFO: [Synth 8-3886] merging instance 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[17].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[18]' (FDE) to 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[5].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0 /i_synth/\SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[5].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[6] )
+INFO: [Synth 8-3886] merging instance 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[20].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[21]' (FDE) to 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[5].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0 /i_synth/\SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[5].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[6] )
+INFO: [Synth 8-3886] merging instance 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[23].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[24]' (FDE) to 'U0/sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[5].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\sobel_fsqrt_32ns_cud_U2/sobel_ap_fsqrt_10_no_dsp_32_u/U0 /i_synth/\SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[5].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[6] )
+WARNING: [Synth 8-3332] Sequential element (sobel_AXILiteS_s_axi_U/FSM_onehot_wstate_reg[0]) is unused and will be removed from module sobel.
+WARNING: [Synth 8-3332] Sequential element (sobel_AXILiteS_s_axi_U/FSM_onehot_rstate_reg[0]) is unused and will be removed from module sobel.
+INFO: [Synth 8-3886] merging instance 'U0/sobel_sitofp_32s_bkb_U1/sobel_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.exp_op_reg[5]' (FDRE) to 'U0/sobel_sitofp_32s_bkb_U1/sobel_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/OP/RESULT_REG.NORMAL.exp_op_reg[6]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 932.121 ; gain = 553.219
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance U0/i_2_15/line_buffer_U/sobel_line_buffer_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/i_2_15/line_buffer_U/sobel_line_buffer_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:20 ; elapsed = 00:01:25 . Memory (MB): peak = 945.832 ; gain = 566.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:29 ; elapsed = 00:01:33 . Memory (MB): peak = 1047.496 ; gain = 668.594
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'U0/sobel_sitofp_32s_bkb_U1/dout_r_reg[28]' (FDE) to 'U0/sobel_sitofp_32s_bkb_U1/dout_r_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/tmp_18_reg_939_reg[28]' (FDE) to 'U0/tmp_18_reg_939_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/sobel_fsqrt_32ns_cud_U2/din1_buf1_reg[28]' (FDE) to 'U0/sobel_fsqrt_32ns_cud_U2/din1_buf1_reg[29]'
+INFO: [Synth 8-6837] The timing for the instance U0/line_buffer_U/sobel_line_buffer_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/line_buffer_U/sobel_line_buffer_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:31 ; elapsed = 00:01:36 . Memory (MB): peak = 1048.566 ; gain = 669.664
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:33 ; elapsed = 00:01:38 . Memory (MB): peak = 1048.566 ; gain = 669.664
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:33 ; elapsed = 00:01:38 . Memory (MB): peak = 1048.566 ; gain = 669.664
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:34 ; elapsed = 00:01:38 . Memory (MB): peak = 1048.566 ; gain = 669.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:34 ; elapsed = 00:01:38 . Memory (MB): peak = 1048.566 ; gain = 669.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:34 ; elapsed = 00:01:39 . Memory (MB): peak = 1048.566 ; gain = 669.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:34 ; elapsed = 00:01:39 . Memory (MB): peak = 1048.566 ; gain = 669.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |    57|
+|2     |DSP48E1_1 |     1|
+|3     |DSP48E1_2 |     1|
+|4     |LUT1      |    71|
+|5     |LUT2      |   140|
+|6     |LUT3      |   507|
+|7     |LUT4      |    90|
+|8     |LUT5      |   234|
+|9     |LUT6      |   266|
+|10    |MUXCY     |   500|
+|11    |MUXF7     |     3|
+|12    |RAMB18E1  |     1|
+|13    |SRL16E    |    21|
+|14    |XORCY     |   460|
+|15    |FDE       |    16|
+|16    |FDRE      |  1032|
+|17    |FDSE      |     1|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:34 ; elapsed = 00:01:39 . Memory (MB): peak = 1048.566 ; gain = 669.664
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 242 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:58 ; elapsed = 00:01:26 . Memory (MB): peak = 1048.566 ; gain = 350.738
+Synthesis Optimization Complete : Time (s): cpu = 00:01:34 ; elapsed = 00:01:39 . Memory (MB): peak = 1048.566 ; gain = 669.664
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1039 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1048.566 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 158 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 142 instances
+  FDE => FDRE: 16 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+219 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:39 ; elapsed = 00:01:44 . Memory (MB): peak = 1048.566 ; gain = 681.156
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1048.566 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = f40071df9ccad597
+INFO: [Coretcl 2-1174] Renamed 163 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1048.566 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/hls_lena/hls_lena/hls2/solution1/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri May 31 10:20:39 2019...

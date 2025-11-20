@@ -1,0 +1,469 @@
+10:57:08 INFO  : Registering command handlers for SDK TCF services
+10:57:11 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\FLASHCOPIE\Desktop\Projet_sobel_lena\lena_vivado\lena_vivado.sdk\temp_xsdb_launch_script.tcl
+10:57:18 INFO  : XSCT server has started successfully.
+10:57:18 INFO  : Successfully done setting XSCT server connection channel  
+10:57:26 INFO  : Successfully done setting SDK workspace  
+10:57:26 INFO  : Processing command line option -hwspec C:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper.hdf.
+11:27:58 INFO  : Refreshed build settings on project hhh
+11:28:57 ERROR : Failed to closesw "C:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/hhh_bsp/system.mss"
+Reason: Cannot close sw design 'C:/Users/FLASHCOPIE/Desktop/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/hhh_bsp/system.mss'.
+Design is not opened in the current session.
+
+
+10:10:51 INFO  : Registering command handlers for SDK TCF services
+10:10:53 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\USER\Downloads\Projet_sobel_lena\Projet_sobel_lena\lena_vivado\lena_vivado.sdk\temp_xsdb_launch_script.tcl
+10:11:03 INFO  : XSCT server has started successfully.
+10:11:03 INFO  : Successfully done setting XSCT server connection channel  
+10:11:16 INFO  : Successfully done setting SDK workspace  
+10:11:16 INFO  : Processing command line option -hwspec C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper.hdf.
+10:16:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:16:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA" && level==0} -index 1' command is executed.
+10:16:21 INFO  : FPGA configured successfully with bitstream "C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:16:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA" && level==0} -index 1' command is executed.
+10:16:52 INFO  : 'fpga -state' command is executed.
+10:16:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:16:52 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A036BFA' is selected.
+10:16:52 INFO  : 'jtag frequency' command is executed.
+10:16:52 INFO  : Sourcing of 'C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:16:52 INFO  : Context for 'APU' is selected.
+10:16:52 INFO  : Hardware design information is loaded from 'C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:16:52 INFO  : 'configparams force-mem-access 1' command is executed.
+10:16:52 INFO  : Context for 'APU' is selected.
+10:16:53 INFO  : 'stop' command is executed.
+10:16:55 INFO  : 'ps7_init' command is executed.
+10:16:55 INFO  : 'ps7_post_config' command is executed.
+10:16:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:16:55 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:16:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:16:55 INFO  : The application 'C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/hhh/Debug/hhh.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:16:55 INFO  : 'configparams force-mem-access 0' command is executed.
+10:16:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+loadhw -hw C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+dow C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/hhh/Debug/hhh.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:16:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:16:56 INFO  : 'con' command is executed.
+10:16:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+con
+----------------End of Script----------------
+
+10:16:56 INFO  : Disconnected from the channel tcfchan#1.
+10:22:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:22:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA" && level==0} -index 1' command is executed.
+10:22:03 INFO  : FPGA configured successfully with bitstream "C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:22:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA" && level==0} -index 1' command is executed.
+10:22:36 INFO  : 'fpga -state' command is executed.
+10:22:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:22:36 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A036BFA' is selected.
+10:22:36 INFO  : 'jtag frequency' command is executed.
+10:22:36 INFO  : Sourcing of 'C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:22:36 INFO  : Context for 'APU' is selected.
+10:22:36 INFO  : Hardware design information is loaded from 'C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:22:36 INFO  : 'configparams force-mem-access 1' command is executed.
+10:22:36 INFO  : Context for 'APU' is selected.
+10:22:36 INFO  : 'stop' command is executed.
+10:22:37 INFO  : 'ps7_init' command is executed.
+10:22:37 INFO  : 'ps7_post_config' command is executed.
+10:22:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:22:37 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:22:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:22:38 INFO  : The application 'C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/hhh/Debug/hhh.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:22:38 INFO  : 'configparams force-mem-access 0' command is executed.
+10:22:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+loadhw -hw C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+dow C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/hhh/Debug/hhh.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:22:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:22:38 INFO  : 'con' command is executed.
+10:22:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+con
+----------------End of Script----------------
+
+10:22:38 INFO  : Disconnected from the channel tcfchan#2.
+10:28:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:28:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA" && level==0} -index 1' command is executed.
+10:28:23 INFO  : FPGA configured successfully with bitstream "C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:28:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA" && level==0} -index 1' command is executed.
+10:28:41 INFO  : 'fpga -state' command is executed.
+10:28:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:28:41 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A036BFA' is selected.
+10:28:41 INFO  : 'jtag frequency' command is executed.
+10:28:41 INFO  : Sourcing of 'C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:28:41 INFO  : Context for 'APU' is selected.
+10:28:41 INFO  : Hardware design information is loaded from 'C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:28:41 INFO  : 'configparams force-mem-access 1' command is executed.
+10:28:41 INFO  : Context for 'APU' is selected.
+10:28:42 INFO  : 'stop' command is executed.
+10:28:43 INFO  : 'ps7_init' command is executed.
+10:28:43 INFO  : 'ps7_post_config' command is executed.
+10:28:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:28:43 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:28:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:28:43 INFO  : The application 'C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/hhh/Debug/hhh.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:28:43 INFO  : 'configparams force-mem-access 0' command is executed.
+10:28:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+loadhw -hw C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+dow C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/hhh/Debug/hhh.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:28:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:28:43 INFO  : 'con' command is executed.
+10:28:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+con
+----------------End of Script----------------
+
+10:28:43 INFO  : Disconnected from the channel tcfchan#3.
+10:31:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:31:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA" && level==0} -index 1' command is executed.
+10:31:47 INFO  : FPGA configured successfully with bitstream "C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:31:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA" && level==0} -index 1' command is executed.
+10:31:55 INFO  : 'fpga -state' command is executed.
+10:31:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:31:55 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A036BFA' is selected.
+10:31:55 INFO  : 'jtag frequency' command is executed.
+10:31:55 INFO  : Sourcing of 'C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:31:55 INFO  : Context for 'APU' is selected.
+10:31:55 INFO  : Hardware design information is loaded from 'C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:31:55 INFO  : 'configparams force-mem-access 1' command is executed.
+10:31:55 INFO  : Context for 'APU' is selected.
+10:31:55 INFO  : 'stop' command is executed.
+10:31:56 INFO  : 'ps7_init' command is executed.
+10:31:56 INFO  : 'ps7_post_config' command is executed.
+10:31:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:31:56 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:31:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:31:56 INFO  : The application 'C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/hhh/Debug/hhh.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:31:56 INFO  : 'configparams force-mem-access 0' command is executed.
+10:31:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+loadhw -hw C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+dow C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/hhh/Debug/hhh.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:31:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:31:56 INFO  : 'con' command is executed.
+10:31:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+con
+----------------End of Script----------------
+
+10:31:56 INFO  : Disconnected from the channel tcfchan#4.
+10:32:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA" && level==0} -index 1' command is executed.
+10:32:53 INFO  : 'fpga -state' command is executed.
+10:32:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:32:54 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A036BFA' is selected.
+10:32:54 INFO  : 'jtag frequency' command is executed.
+10:32:54 INFO  : Sourcing of 'C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:32:54 INFO  : Context for 'APU' is selected.
+10:32:54 INFO  : Hardware design information is loaded from 'C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:32:54 INFO  : 'configparams force-mem-access 1' command is executed.
+10:32:55 INFO  : Context for 'APU' is selected.
+10:32:55 INFO  : 'stop' command is executed.
+10:32:56 INFO  : 'ps7_init' command is executed.
+10:32:56 INFO  : 'ps7_post_config' command is executed.
+10:32:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:32:56 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:32:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:32:56 INFO  : The application 'C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/hhh/Debug/hhh.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:32:56 INFO  : 'configparams force-mem-access 0' command is executed.
+10:32:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+loadhw -hw C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+dow C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/hhh/Debug/hhh.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:32:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:32:56 INFO  : 'con' command is executed.
+10:32:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+con
+----------------End of Script----------------
+
+10:32:56 INFO  : Disconnected from the channel tcfchan#5.
+10:33:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:33:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA" && level==0} -index 1' command is executed.
+10:33:18 INFO  : FPGA configured successfully with bitstream "C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:33:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA" && level==0} -index 1' command is executed.
+10:33:43 INFO  : 'fpga -state' command is executed.
+10:33:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:33:43 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A036BFA' is selected.
+10:33:43 INFO  : 'jtag frequency' command is executed.
+10:33:43 INFO  : Sourcing of 'C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:33:43 INFO  : Context for 'APU' is selected.
+10:33:43 INFO  : Hardware design information is loaded from 'C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:33:43 INFO  : 'configparams force-mem-access 1' command is executed.
+10:33:43 INFO  : Context for 'APU' is selected.
+10:33:43 INFO  : 'stop' command is executed.
+10:33:44 INFO  : 'ps7_init' command is executed.
+10:33:44 INFO  : 'ps7_post_config' command is executed.
+10:33:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:33:44 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:33:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:33:44 INFO  : The application 'C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/hhh/Debug/hhh.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:33:44 INFO  : 'configparams force-mem-access 0' command is executed.
+10:33:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+loadhw -hw C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+dow C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/hhh/Debug/hhh.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:33:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:33:45 INFO  : 'con' command is executed.
+10:33:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+con
+----------------End of Script----------------
+
+10:33:45 INFO  : Disconnected from the channel tcfchan#6.
+10:35:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA" && level==0} -index 1' command is executed.
+10:35:09 INFO  : 'fpga -state' command is executed.
+10:35:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:35:10 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A036BFA' is selected.
+10:35:10 INFO  : 'jtag frequency' command is executed.
+10:35:10 INFO  : Sourcing of 'C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:35:10 INFO  : Context for 'APU' is selected.
+10:35:10 INFO  : Hardware design information is loaded from 'C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:35:10 INFO  : 'configparams force-mem-access 1' command is executed.
+10:35:10 INFO  : Context for 'APU' is selected.
+10:35:10 INFO  : 'stop' command is executed.
+10:35:12 INFO  : 'ps7_init' command is executed.
+10:35:12 INFO  : 'ps7_post_config' command is executed.
+10:35:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:35:12 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:35:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:35:13 INFO  : The application 'C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/hhh/Debug/hhh.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:35:13 INFO  : 'configparams force-mem-access 0' command is executed.
+10:35:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+loadhw -hw C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+dow C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/hhh/Debug/hhh.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:35:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:35:13 INFO  : 'con' command is executed.
+10:35:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+con
+----------------End of Script----------------
+
+10:35:13 INFO  : Disconnected from the channel tcfchan#7.
+10:37:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA" && level==0} -index 1' command is executed.
+10:37:46 INFO  : 'fpga -state' command is executed.
+10:37:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:37:46 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A036BFA' is selected.
+10:37:46 INFO  : 'jtag frequency' command is executed.
+10:37:46 INFO  : Sourcing of 'C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:37:46 INFO  : Context for 'APU' is selected.
+10:37:46 INFO  : Hardware design information is loaded from 'C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:37:46 INFO  : 'configparams force-mem-access 1' command is executed.
+10:37:47 INFO  : Context for 'APU' is selected.
+10:37:47 INFO  : 'stop' command is executed.
+10:37:48 INFO  : 'ps7_init' command is executed.
+10:37:48 INFO  : 'ps7_post_config' command is executed.
+10:37:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:37:48 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:37:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:37:49 INFO  : The application 'C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/hhh/Debug/hhh.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:37:49 INFO  : 'configparams force-mem-access 0' command is executed.
+10:37:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+loadhw -hw C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+dow C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/hhh/Debug/hhh.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:37:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:37:49 INFO  : 'con' command is executed.
+10:37:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+con
+----------------End of Script----------------
+
+10:37:49 INFO  : Disconnected from the channel tcfchan#8.
+10:47:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:47:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA" && level==0} -index 1' command is executed.
+10:47:16 INFO  : FPGA configured successfully with bitstream "C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:47:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA" && level==0} -index 1' command is executed.
+10:47:30 INFO  : 'fpga -state' command is executed.
+10:47:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:47:30 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A036BFA' is selected.
+10:47:30 INFO  : 'jtag frequency' command is executed.
+10:47:30 INFO  : Sourcing of 'C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:47:30 INFO  : Context for 'APU' is selected.
+10:47:30 INFO  : Hardware design information is loaded from 'C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:47:30 INFO  : 'configparams force-mem-access 1' command is executed.
+10:47:30 INFO  : Context for 'APU' is selected.
+10:47:30 INFO  : 'stop' command is executed.
+10:47:31 INFO  : 'ps7_init' command is executed.
+10:47:31 INFO  : 'ps7_post_config' command is executed.
+10:47:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:47:31 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:47:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:47:31 INFO  : The application 'C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/hhh/Debug/hhh.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:47:31 INFO  : 'configparams force-mem-access 0' command is executed.
+10:47:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+loadhw -hw C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+dow C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/hhh/Debug/hhh.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:47:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:47:31 INFO  : 'con' command is executed.
+10:47:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+con
+----------------End of Script----------------
+
+10:47:31 INFO  : Disconnected from the channel tcfchan#9.
+10:50:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:50:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA" && level==0} -index 1' command is executed.
+10:50:06 INFO  : FPGA configured successfully with bitstream "C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:50:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA" && level==0} -index 1' command is executed.
+10:50:25 INFO  : 'fpga -state' command is executed.
+10:50:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:50:25 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203A036BFA' is selected.
+10:50:25 INFO  : 'jtag frequency' command is executed.
+10:50:25 INFO  : Sourcing of 'C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+10:50:25 INFO  : Context for 'APU' is selected.
+10:50:25 INFO  : Hardware design information is loaded from 'C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+10:50:25 INFO  : 'configparams force-mem-access 1' command is executed.
+10:50:25 INFO  : Context for 'APU' is selected.
+10:50:25 INFO  : 'stop' command is executed.
+10:50:26 INFO  : 'ps7_init' command is executed.
+10:50:26 INFO  : 'ps7_post_config' command is executed.
+10:50:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:50:26 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:50:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:50:27 INFO  : The application 'C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/hhh/Debug/hhh.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:50:27 INFO  : 'configparams force-mem-access 0' command is executed.
+10:50:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+loadhw -hw C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+dow C:/Users/USER/Downloads/Projet_sobel_lena/Projet_sobel_lena/lena_vivado/lena_vivado.sdk/hhh/Debug/hhh.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:50:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:50:27 INFO  : 'con' command is executed.
+10:50:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT1 210203A036BFA"} -index 0
+con
+----------------End of Script----------------
+
+10:50:27 INFO  : Disconnected from the channel tcfchan#10.

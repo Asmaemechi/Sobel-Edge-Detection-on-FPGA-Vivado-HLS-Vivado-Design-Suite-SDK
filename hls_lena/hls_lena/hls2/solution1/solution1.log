@@ -1,0 +1,326 @@
+==============================================================
+File generated on Thu May 22 19:47:30 +0100 2025
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'sobel.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 102.797 ; gain = 17.723
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 102.797 ; gain = 17.723
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 152.305 ; gain = 67.230
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:58) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' into 'generic_cast_IEEE754<int, float>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, float>' into '__hls_fptosi_float_i32' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_float_i32' into 'sobel' (sobel.cpp:44) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 180.758 ; gain = 95.684
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1' (sobel.cpp:18) in function 'sobel' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (sobel.cpp:30) in function 'sobel' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (sobel.cpp:31) in function 'sobel' completely with a factor of 3.
+INFO: [XFORM 203-101] Partitioning array 'line_buffer' (sobel.cpp:10) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window' (sobel.cpp:13) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window' (sobel.cpp:13) in dimension 2 completely.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:58) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' into 'generic_cast_IEEE754<int, float>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, float>' into '__hls_fptosi_float_i32' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_float_i32' into 'sobel' (sobel.cpp:44) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 241.898 ; gain = 156.824
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 255.984 ; gain = 170.910
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'sobel' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sobel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-68] The II Violation in module 'sobel': Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between 'load' operation ('line_buffer_0_load_2', sobel.cpp:32) on array 'line_buffer[0]', sobel.cpp:10 and 'store' operation (sobel.cpp:24) of variable 'line_buffer_1_load', sobel.cpp:24 on array 'line_buffer[0]', sobel.cpp:10.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('line_buffer_2_load_3', sobel.cpp:32) on array 'line_buffer[2]', sobel.cpp:10 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'line_buffer_2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 3, Depth = 28.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 21.295 seconds; current allocated memory: 196.049 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.758 seconds; current allocated memory: 196.653 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sobel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/input_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/input_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/input_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/input_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/output_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/output_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/output_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/output_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'sobel' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'sobel_sitofp_32s_32_6_1' to 'sobel_sitofp_32s_bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sobel_fsqrt_32ns_32ns_32_12_1' to 'sobel_fsqrt_32ns_cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sobel_mul_mul_11s_11s_22_1_1' to 'sobel_mul_mul_11sdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sobel_mac_muladd_11s_11s_22s_22_1_1' to 'sobel_mac_muladd_eOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'sobel_fsqrt_32ns_cud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sobel_mac_muladd_eOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sobel_mul_mul_11sdEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sobel_sitofp_32s_bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sobel'.
+INFO: [HLS 200-111]  Elapsed time: 1.547 seconds; current allocated memory: 198.267 MB.
+INFO: [RTMG 210-278] Implementing memory 'sobel_line_buffer_0_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:14 ; elapsed = 00:00:33 . Memory (MB): peak = 257.137 ; gain = 172.062
+INFO: [SYSC 207-301] Generating SystemC RTL for sobel.
+INFO: [VHDL 208-304] Generating VHDL RTL for sobel.
+INFO: [VLOG 209-307] Generating Verilog RTL for sobel.
+INFO: [HLS 200-112] Total elapsed time: 33.184 seconds; peak allocated memory: 198.267 MB.
+==============================================================
+File generated on Thu May 22 19:48:24 +0100 2025
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Thu May 22 19:59:08 +0100 2025
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'sobel.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 102.363 ; gain = 17.023
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 102.363 ; gain = 17.023
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 152.684 ; gain = 67.344
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:58) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' into 'generic_cast_IEEE754<int, float>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, float>' into '__hls_fptosi_float_i32' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_float_i32' into 'sobel' (sobel.cpp:44) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 182.340 ; gain = 97.000
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1' (sobel.cpp:18) in function 'sobel' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (sobel.cpp:30) in function 'sobel' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (sobel.cpp:31) in function 'sobel' completely with a factor of 3.
+INFO: [XFORM 203-101] Partitioning array 'line_buffer' (sobel.cpp:10) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window' (sobel.cpp:13) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'window' (sobel.cpp:13) in dimension 2 completely.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:58) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' into 'generic_cast_IEEE754<int, float>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, float>' into '__hls_fptosi_float_i32' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_float_i32' into 'sobel' (sobel.cpp:44) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 241.863 ; gain = 156.523
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 256.148 ; gain = 170.809
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'sobel' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sobel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-68] The II Violation in module 'sobel': Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between 'load' operation ('line_buffer_0_load_2', sobel.cpp:32) on array 'line_buffer[0]', sobel.cpp:10 and 'store' operation (sobel.cpp:24) of variable 'line_buffer_1_load', sobel.cpp:24 on array 'line_buffer[0]', sobel.cpp:10.
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('line_buffer_2_load_3', sobel.cpp:32) on array 'line_buffer[2]', sobel.cpp:10 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'line_buffer_2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 3, Depth = 28.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 21.997 seconds; current allocated memory: 196.034 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.78 seconds; current allocated memory: 196.654 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sobel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/input_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/input_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/input_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/input_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/output_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/output_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/output_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/output_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'sobel' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'sobel_sitofp_32s_32_6_1' to 'sobel_sitofp_32s_bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sobel_fsqrt_32ns_32ns_32_12_1' to 'sobel_fsqrt_32ns_cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sobel_mul_mul_11s_11s_22_1_1' to 'sobel_mul_mul_11sdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sobel_mac_muladd_11s_11s_22s_22_1_1' to 'sobel_mac_muladd_eOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'sobel_fsqrt_32ns_cud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sobel_mac_muladd_eOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sobel_mul_mul_11sdEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sobel_sitofp_32s_bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sobel'.
+INFO: [HLS 200-111]  Elapsed time: 1.505 seconds; current allocated memory: 198.283 MB.
+INFO: [RTMG 210-278] Implementing memory 'sobel_line_buffer_0_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:11 ; elapsed = 00:00:29 . Memory (MB): peak = 256.355 ; gain = 171.016
+INFO: [SYSC 207-301] Generating SystemC RTL for sobel.
+INFO: [VHDL 208-304] Generating VHDL RTL for sobel.
+INFO: [VLOG 209-307] Generating Verilog RTL for sobel.
+INFO: [HLS 200-112] Total elapsed time: 29.503 seconds; peak allocated memory: 198.283 MB.
+==============================================================
+File generated on Thu May 22 19:59:54 +0100 2025
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Sat May 31 09:50:17 +0200 2025
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+File generated on Fri May 31 09:51:41 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
+==============================================================
+File generated on Fri May 31 10:16:36 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'sobel.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 102.676 ; gain = 17.211
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 102.676 ; gain = 17.211
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:24 . Memory (MB): peak = 151.379 ; gain = 65.914
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:58) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' into 'generic_cast_IEEE754<int, float>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, float>' into '__hls_fptosi_float_i32' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_float_i32' into 'sobel' (sobel.cpp:44) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:25 . Memory (MB): peak = 181.113 ; gain = 95.648
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1' (sobel.cpp:18) in function 'sobel' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (sobel.cpp:30) in function 'sobel' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (sobel.cpp:31) in function 'sobel' completely with a factor of 3.
+INFO: [XFORM 203-102] Partitioning array 'window' (sobel.cpp:13) in dimension 1 automatically.
+INFO: [XFORM 203-102] Partitioning array 'window.0' (sobel.cpp:13) automatically.
+INFO: [XFORM 203-102] Partitioning array 'window.1' (sobel.cpp:13) automatically.
+INFO: [XFORM 203-102] Partitioning array 'window.2' (sobel.cpp:13) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::mantissa' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:14) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::expv' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:17) automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::__signbit' into 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:58) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, (ap_q_mode)6, float>' into 'generic_cast_IEEE754<int, float>' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<int, float>' into '__hls_fptosi_float_i32' (r:/builds/2018.3/continuous/2018_12_06_2405991/src/products/hls/hls_lib/hlsmath/src/lib_floatconversion.cpp:50) automatically.
+INFO: [XFORM 203-602] Inlining function '__hls_fptosi_float_i32' into 'sobel' (sobel.cpp:44) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:27 . Memory (MB): peak = 241.383 ; gain = 155.918
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:28 . Memory (MB): peak = 256.508 ; gain = 171.043
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'sobel' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sobel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-68] The II Violation in module 'sobel': Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between 'store' operation (sobel.cpp:25) of variable 'line_buffer_load_1', sobel.cpp:25 on array 'line_buffer', sobel.cpp:10 and 'load' operation ('line_buffer_load', sobel.cpp:24) on array 'line_buffer', sobel.cpp:10.
+WARNING: [SCHED 204-69] Unable to schedule 'store' operation (sobel.cpp:26) of variable 'tmp.data.V', sobel.cpp:20 on array 'line_buffer', sobel.cpp:10 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'line_buffer'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 6, Depth = 29.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 28.128 seconds; current allocated memory: 196.206 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.439 seconds; current allocated memory: 196.847 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sobel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/input_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/input_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/input_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/input_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/output_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/output_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/output_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel/output_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'sobel' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'sobel_sitofp_32s_32_6_1' to 'sobel_sitofp_32s_bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sobel_fsqrt_32ns_32ns_32_12_1' to 'sobel_fsqrt_32ns_cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sobel_mul_mul_11s_11s_22_1_1' to 'sobel_mul_mul_11sdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sobel_mac_muladd_11s_11s_22s_22_1_1' to 'sobel_mac_muladd_eOg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'sobel_fsqrt_32ns_cud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sobel_mac_muladd_eOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sobel_mul_mul_11sdEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sobel_sitofp_32s_bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sobel'.
+INFO: [HLS 200-111]  Elapsed time: 1.117 seconds; current allocated memory: 198.549 MB.
+INFO: [RTMG 210-278] Implementing memory 'sobel_line_buffer_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:09 ; elapsed = 00:00:36 . Memory (MB): peak = 257.145 ; gain = 171.680
+INFO: [SYSC 207-301] Generating SystemC RTL for sobel.
+INFO: [VHDL 208-304] Generating VHDL RTL for sobel.
+INFO: [VLOG 209-307] Generating Verilog RTL for sobel.
+INFO: [HLS 200-112] Total elapsed time: 36.35 seconds; peak allocated memory: 198.549 MB.
+==============================================================
+File generated on Fri May 31 10:17:28 +0200 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.25ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...

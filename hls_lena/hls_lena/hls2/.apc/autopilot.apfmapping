@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="sobel.cpp" path="C:\Users\FLASHCOPIE\Desktop\Projet_sobel_lena\hls_lena\hls_lena\sobel.cpp"/>
+    <originFiles name="sobel.h" path="C:\Users\FLASHCOPIE\Desktop\Projet_sobel_lena\hls_lena\hls_lena\sobel.h"/>
+  </source>
+  <testbench>
+    <originFiles name="lena.grey" path="C:\Users\FLASHCOPIE\Desktop\Projet_sobel_lena\hls_lena\hls_lena\lena.grey"/>
+    <originFiles name="main.cpp" path="C:\Users\FLASHCOPIE\Desktop\Projet_sobel_lena\hls_lena\hls_lena\main.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
